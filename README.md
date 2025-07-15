@@ -1,74 +1,83 @@
-# Jolly-Ops Earth Visualization
+# Jolly-Ops Website
 
-A React application that visualizes a rotating Earth with data flowing around it like fiber optics.
-
-## Overview
-
-This project creates an interactive 3D visualization of Earth using React, Three.js, React Three Fiber, and Drei. It features a realistic Earth model with cloud layers and animated data flows that resemble fiber optic connections spanning across the globe.
+A Next.js application visualizing global operations with a 3D Earth animation using Three.js.
 
 ## Features
 
-- Realistic 3D Earth with texture maps for color, normal mapping, and specular highlights
-- Cloud layer that rotates independently from the Earth
-- Dynamic data flow visualization with glowing fiber optic-like connections
-- Interactive camera controls for zooming and rotating around the Earth
-- Starfield background for a space-like atmosphere
-- Subtle atmospheric glow effect
+- Interactive 3D Earth visualization
+- Real-time data flow animations
+- Responsive design
+- Built with Next.js, React Three Fiber, and TypeScript
 
 ## Technologies Used
 
-- React.js
-- Three.js - 3D rendering library
-- React Three Fiber - React renderer for Three.js
-- Drei - Useful helpers for React Three Fiber
-- Modern JavaScript (ES6+)
+- Next.js 14
+- React 18
+- Three.js
+- React Three Fiber (@react-three/fiber)
+- React Three Drei (@react-three/drei)
+- TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
-### Prerequisites
+First, install the dependencies:
 
-- Node.js (v14.0.0 or later)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```
-git clone https://github.com/your-username/jolly-ops-website.git
-cd jolly-ops-website
-```
-
-2. Install dependencies:
-```
+```bash
 npm install
 ```
 
-3. Start the development server:
+Then, run the development server:
+
+```bash
+npm run dev
 ```
-npm start
-```
 
-4. Open your browser and navigate to `http://localhost:3000`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployment
+## Build for Production
 
-To build the project for production:
+To build the application for production:
 
-```
+```bash
 npm run build
 ```
 
-The build files will be created in the `build` directory and can be deployed to any static hosting service like GitHub Pages, Netlify, or Vercel.
+To start the production server:
 
-## Customization
+```bash
+npm start
+```
 
-You can customize various aspects of the visualization:
+## Deployment to GitHub Pages
 
-- Adjust the number of data flows by changing the `count` prop in the `DataFlow` component
-- Modify the Earth's rotation speed in the `useFrame` hook
-- Change the colors of the data flows by adjusting the color parameters
-- Add additional 3D elements to enhance the visualization
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
-## License
+### Automatic Deployment
 
-This project is open source and available under the MIT License. 
+When you push changes to the `main` branch, the GitHub Actions workflow will:
+1. Build the Next.js application
+2. Export static files
+3. Deploy to GitHub Pages
+
+You can also manually trigger a deployment from the Actions tab in your GitHub repository.
+
+### Manual Deployment
+
+To manually build for GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+This will create a static export in the `out` directory with the proper configuration for GitHub Pages.
+
+## Project Structure
+
+- `/src/components` - React components including the 3D Earth visualization
+- `/src/app` - Next.js app router pages and layouts
+- `/public` - Static assets
+
+## Credits
+
+This project is a Next.js migration of the original Jolly-Ops React application.
