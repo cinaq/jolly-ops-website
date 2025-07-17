@@ -21,8 +21,9 @@ export default function Home() {
       <div className="flex-grow"></div>
       <div className="content relative z-10 text-center p-8 w-full mb-8">
         <h1 className="text-5xl font-bold mb-4 text-white shadow-text">Jolly-Ops</h1>
+        <h2 className="text-2xl font-bold mb-4 text-white shadow-text">Where operations meet joy and fun</h2>
         <p className="text-xl max-w-lg mx-auto text-white shadow-text">
-        By <a href="https://cinaq.com" className="" target="_blank" rel="noopener noreferrer">CINAQ.com</a> and <a href="https://low-ops.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Low-Ops.com</a>
+        Proudly hosted on <a href="https://low-ops.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Low-Ops.com</a>
         </p>
       </div>
     </main>
